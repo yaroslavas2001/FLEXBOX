@@ -3,12 +3,14 @@
 }
 .block__row{
 display: flex;
-align-items: center;
+/* align-items: center; */
 /* wrap - переход на следующую строку если не хвает места */
 /* align-items - определяет поведение вдоль поперечной оси */
 /* justify-content - определяет выравнивание вдоль основной оси */
   border: 20px solid #ece89d;
   margin: 0px 0px 20px 0px;
+  flex-direction: column-reverse;
+  height: 700px;
 }
 .block__column{
   border: 20px solid #5e5373;
@@ -35,6 +37,10 @@ align-items: center;
 /* flex-shrink - возможность уменьшаться в размере */
 /* flex: basis grow shrink; */
 
+
+/* flex-direction - устанавливает основную ось */
+
+
 .block__column_1{
 /* align-self: flex-start; */
 /* order: 3; */
@@ -44,7 +50,7 @@ align-items: center;
 }
 .block__column_2{
 /* order: 2; */
-
+flex: 1 1 auto;
 
 
 }
