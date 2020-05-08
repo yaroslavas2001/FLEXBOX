@@ -3,7 +3,7 @@
 }
 .block__row{
 display: flex;
-
+align-items: center;
 /* wrap - переход на следующую строку если не хвает места */
 /* align-items - определяет поведение вдоль поперечной оси */
 /* justify-content - определяет выравнивание вдоль основной оси */
@@ -12,6 +12,10 @@ display: flex;
 }
 .block__column{
   border: 20px solid #5e5373;
+  /* flex-basis: 500px;
+  flex-grow: 1;
+  flex-shrink: 1; */
+  /* flex: 0 1 auto; */
 }
 .block__item{
   background-color: #18b5a4;
@@ -20,4 +24,33 @@ display: flex;
   color: #fff;
   font-weight: 700;
   text-align: center;
+}
+
+
+
+/* align-self - переопределяет выравнивание */
+/* order - порядок вывода */
+/* flaex-basis - базовый размер элемента */
+/* flex-grow - возможность увеличиваться в размере */
+/* flex-shrink - возможность уменьшаться в размере */
+/* flex: basis grow shrink; */
+
+.block__column_1{
+/* align-self: flex-start; */
+/* order: 3; */
+
+
+
+}
+.block__column_2{
+/* order: 2; */
+
+
+
+}
+.block__column_3{
+/* align-self: flex-end; */
+/* order: 1; */
+
+
 }
